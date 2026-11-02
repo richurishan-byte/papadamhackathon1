@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#725b24", "tertiary": "#52634f", "surface-variant": "#cee9d9", "on-secondary-container": "#59666f", "inverse-on-surface": "#dcf7e7", "on-primary-fixed": "#251a00", "outline": "#7e7668", "error": "#ba1a1a", "surface-container-highest": "#cee9d9", "on-tertiary-fixed-variant": "#3a4b38", "surface-container-low": "#dffaea", "tertiary-fixed": "#d4e8ce", "surface-container": "#d9f4e4", "secondary-container": "#d6e4ee", "primary": "#725b24", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface": "#082016", "on-secondary-fixed-variant": "#3b4951", "on-surface-variant": "#4c463a", "surface-bright": "#e8fff0", "surface-dim": "#c6e0d1", "outline-variant": "#cfc5b5", "on-error-container": "#93000a", "on-secondary-fixed": "#101d24", "on-primary-container": "#5d4913", "on-primary": "#ffffff", "primary-container": "#d6b978", "secondary": "#536069", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "background": "#e8fff0", "tertiary-container": "#afc2aa", "secondary-fixed-dim": "#bbc8d2", "primary-fixed-dim": "#e1c381", "inverse-primary": "#e1c381", "primary-fixed": "#fedf9b", "surface": "#e8fff0", "secondary-fixed": "#d6e4ee", "on-background": "#082016", "on-tertiary-container": "#3f503d", "on-tertiary-fixed": "#101f0f", "tertiary-fixed-dim": "#b9ccb3", "on-primary-fixed-variant": "#58440e", "inverse-surface": "#1e352a", "surface-container-high": "#d4efdf", "error-container": "#ffdad6" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "gutter-tablet": "2rem", "space-lg": "2rem", "space-xl": "3.5rem", "space-md": "1.25rem", "margin": "1.25rem", "gutter-desktop": "2.5rem", "margin-desktop": "4rem", "margin-tablet": "2.5rem", "gutter": "1.5rem", "space-xs": "0.375rem" }, fontFamily: { "body-md": ["Manrope"], "label-sm": ["Manrope"], "display-hero-mobile": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "title-lg": ["Manrope"], "body-sm": ["Manrope"], "display-hero": ["Playfair Display"], "label-lg": ["Manrope"], "body-lg": ["Manrope"], "label-md": ["Manrope"], "headline-sm": ["Playfair Display"], "headline-lg": ["Playfair Display"], "title-md": ["Manrope"], "headline-md": ["Playfair Display"] }, fontSize: { "body-md": ["1rem", { lineHeight: "1.65rem", letterSpacing: "0.01em", fontWeight: "400" }], "label-sm": ["0.6875rem", { lineHeight: "0.875rem", letterSpacing: "0.14em", fontWeight: "500" }], "display-hero-mobile": ["2.75rem", { lineHeight: "3.25rem", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-lg-mobile": ["2rem", { lineHeight: "2.5rem", letterSpacing: "0em", fontWeight: "500" }], "title-lg": ["1.375rem", { lineHeight: "1.875rem", letterSpacing: "-0.01em", fontWeight: "600" }], "body-sm": ["0.875rem", { lineHeight: "1.35rem", letterSpacing: "0.015em", fontWeight: "400" }], "display-hero": ["4.5rem", { lineHeight: "5rem", letterSpacing: "-0.02em", fontWeight: "400" }], "label-lg": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.08em", fontWeight: "600" }], "body-lg": ["1.125rem", { lineHeight: "1.85rem", letterSpacing: "0.01em", fontWeight: "400" }], "label-md": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.12em", fontWeight: "600" }], "headline-sm": ["1.75rem", { lineHeight: "2.25rem", letterSpacing: "0em", fontWeight: "600" }], "headline-lg": ["3rem", { lineHeight: "3.5rem", letterSpacing: "-0.015em", fontWeight: "500" }], "title-md": ["1.125rem", { lineHeight: "1.625rem", letterSpacing: "0em", fontWeight: "600" }], "headline-md": ["2.25rem", { lineHeight: "2.75rem", letterSpacing: "-0.01em", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#FAF8F0;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-[#FAF8F0] font-body-md text-on-surface antialiased flex flex-col min-h-screen relative selection:bg-primary-container selection:text-on-primary-container"><div class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-10%,rgba(214,185,120,0.18),transparent_70%),radial-gradient(ellipse_60%_40%_at_100%_100%,rgba(220,234,244,0.35),transparent_60%)]"></div><header class="fixed top-0 inset-x-0 z-50 pt-safe bg-[#FAF8F0]/75 backdrop-blur-2xl shadow-[0_8px_32px_-4px_rgba(214,185,120,0.12)]"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="A Better Tomorrow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsNgQin36yMagqiBWn3J0GMVJ4by6VbOPsvbcBBEzx1Nm0vUIO4pMr43Gqs8rh4n6gmz5LIJxMVNtcC6By6j-SQP39Ye2q32MEoiXfuOzz8fSvwGlqU6Wt63AIk70VQlj1mak83u5jjMFGSvQ8KJxIheVXbNUM7CECKky_j6k3D0wv3Vab2RME7Vz_pShNMKEBoRGvAYEjLXGVxXtpFBZnKAZ65pQmR-yJ6m6GRX8u"/><div class="flex flex-col"><span class="font-headline-sm text-title-md text-on-surface tracking-tight leading-none">A Better Tomorrow</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase mt-0.5">Home</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 rounded-full flex items-center justify-center text-primary hover:text-on-surface hover:bg-surface-container-highest/40 transition-colors"><span class="material-symbols-outlined text-[22px]">wb_twilight</span></button><div class="p-0.5 rounded-full ring-1 ring-primary-container/60 shadow-[0_0_12px_rgba(214,185,120,0.35)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTWT8qevWRsmjY05pH9l_sVR-EsL-7CutEH7CoTBNwuu85D2K_XQoQ0a2ATJ4WgVd3LibpOYldM_K6nuG-gf20p3hGSOj6g5eJp5xrIiWgJHgACwwJO8BAg0EdhBk4OGbBBYRlSD2IB9aXZhDPCcOBVh7chjuCURRXo1s3Ar4FgZ2cQwZiFJ5Wcv_KFLBG3TSBzV8IS5vjpmy2dMYNOXNvh9bJ3fGoCO98CZ6LCGF0"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-transparent z-10"><div class="flex flex-col w-full relative overflow-hidden select-none">
+<!-- Celestial Ambient Atmosphere Layers -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-[140%] h-[560px] pointer-events-none rounded-full bg-gradient-to-b from-primary-fixed/30 via-secondary-container/40 to-transparent blur-3xl -z-10"></div>
+<div class="absolute top-[280px] -right-20 w-80 h-80 pointer-events-none rounded-full bg-tertiary-fixed/35 blur-2xl -z-10"></div>
+<div class="absolute top-[640px] -left-20 w-72 h-72 pointer-events-none rounded-full bg-primary-fixed-dim/20 blur-3xl -z-10"></div>
+<!-- HERO SECTION -->
+<section class="relative px-margin pt-4 pb-8 flex flex-col items-center text-center">
+<!-- Ambient Heavenly Badge -->
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-surface-container-lowest/80 shadow-[0_4px_16px_rgba(214,185,120,0.22)] backdrop-blur-md mb-6 transform hover:scale-105 transition-transform duration-300">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#D6B978] animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-widest uppercase">Sacred Dawn Edition • 2025</span>
+</div>
+<!-- Hero Title -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight tracking-tight max-w-sm mb-4">
+      Together, We Can Create a 
+      <span class="italic font-display-hero-mobile text-headline-lg-mobile bg-gradient-to-r from-primary via-primary-container to-surface-tint bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(214,185,120,0.3)]">
+        Better Tomorrow.
+      </span>
+</h1>
+<!-- Subheading -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-8 leading-relaxed">
+      A world filled with hope, kindness, and sacred possibilities begins with the choices we make today.
+    </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-center gap-3.5 w-full max-w-xs mb-8">
+<button class="w-full h-13 py-3.5 px-6 rounded-full bg-gradient-to-r from-primary-container via-primary-fixed-dim to-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-[0_8px_24px_-2px_rgba(214,185,120,0.45)] hover:shadow-[0_12px_32px_-2px_rgba(214,185,120,0.65)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 group">
+<span>Explore Our World</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">east</span>
+</button>
+<button class="w-full h-13 py-3.5 px-6 rounded-full bg-surface-container-lowest/70 backdrop-blur-xl text-on-surface font-label-lg text-label-lg shadow-[0_4px_20px_rgba(38,61,50,0.06)] hover:bg-surface-container-lowest hover:shadow-[0_8px_24px_rgba(214,185,120,0.25)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">spa</span>
+<span>Be the Change</span>
+</button>
+</div>
+<!-- Live Celestial Pulse Card -->
+<div class="w-full max-w-sm rounded-lg bg-surface-container-lowest/85 backdrop-blur-2xl p-4 shadow-[0_16px_40px_-10px_rgba(38,61,50,0.07),0_0_24px_2px_rgba(245,230,200,0.45)] flex items-center justify-between gap-3 text-left">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-full bg-secondary-container/60 flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+<span class="absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full bg-primary-container shadow-[0_0_6px_#D6B978]"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-bold tracking-tight truncate" id="soul-counter">142,890</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Souls committed to dawn stewardship</span>
+</div>
+</div>
+<button class="shrink-0 w-8 h-8 rounded-full bg-surface-container-high/60 flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</button>
+</div>
+</section>
+<!-- CELESTIAL STORY SCENERY PLACEHOLDER -->
+<section class="px-margin mb-10">
+<div class="relative w-full h-52 rounded-xl overflow-hidden shadow-[0_20px_40px_-12px_rgba(38,61,50,0.12)]">
+<img class="w-full h-full object-cover" data-alt="A sublime cinematic photograph of ethereal morning mist rising gently over lush sacred alpine forests and winding crystal rivers at dawn, golden ethereal sunlight casting divine luminous volumetric rays, soft ivory cream sky fading into heavenly baby blue, serene atmospheric sanctuary aesthetic, highly peaceful and transcendental fine art landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL56MJp8Pw_viCH7uPcMjvNnPleaXTTiNljtkYX6MmPSmJWsONtf7tTJdV2M9TfqzsgDno1f8R_byvNuNsMRT__gBU6AWS2JDdZ3JBiswCRwhvzjPj45utsGvGCEoRjFNYBRgzM3yBLR56r6yhBBRj-Yz8AtUNnZxjdgJKE9ApLLenpVO0Yxn5tfifXhoecVaKyCEPss82mzbvpU9v30qu7IgB4TS86kxnu4q51uoZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent"></div>
+<!-- Overlaid Sanctuary Whisper -->
+<div class="absolute bottom-4 left-4 right-4 flex items-end justify-between text-on-primary">
+<div class="flex flex-col max-w-[80%]">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed drop-shadow-sm">Sacred Sanctuaries</span>
+<p class="font-headline-sm text-title-md text-surface-bright leading-tight mt-0.5">Where humanity remembers harmony with the earth.</p>
+</div>
+<div class="p-2 rounded-full bg-surface-container-lowest/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-[20px] text-surface-bright">filter_vintage</span>
+</div>
+</div>
+</div>
+</section>
+<!-- THE REALITY WE FACE SECTION -->
+<section class="px-margin mb-10 flex flex-col">
+<!-- Section Header -->
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold block mb-0.5">The Sacred Balance</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">The Reality We Face</h2>
+</div>
+<span class="p-2 rounded-full bg-surface-container-low text-tertiary">
+<span class="material-symbols-outlined text-[20px]">hourglass_top</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+      Understanding the fragile threads of our shared home inspires devotion. Through conscious action, every metric becomes a testimony of restoration.
+    </p>
+<!-- Metrics Cards Stack -->
+<div class="flex flex-col gap-4">
+<!-- Water Card -->
+<div class="rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl p-5 shadow-[0_8px_24px_rgba(214,185,120,0.14)] hover:shadow-[0_12px_32px_rgba(214,185,120,0.22)] transition-shadow duration-300">
+<div class="flex items-start justify-between mb-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface leading-none">1.2B</span>
+<span class="font-label-md text-label-md text-tertiary uppercase">people</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Yearning for sacred clean water access</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/70 text-on-secondary-fixed font-label-sm text-label-sm">+340k today</span>
+</div>
+<!-- Custom Radiant Progress Bar -->
+<div class="mt-4 pt-3 border-t border-transparent">
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Global Aquifer Regeneration Pact</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">68% Restored</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary to-primary-container transition-all duration-700 w-[68%] shadow-[0_0_8px_rgba(214,185,120,0.4)]"></div>
+</div>
+</div>
+</div>
+<!-- Canopy & Tree Twin Cards -->
+<div class="grid grid-cols-2 gap-3.5">
+<!-- Canopy Card -->
+<div class="rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl p-4 shadow-[0_8px_24px_rgba(214,185,120,0.12)] flex flex-col justify-between">
+<div>
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed mb-3">
+<span class="material-symbols-outlined text-[18px]">forest</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">40%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug mt-1 block">Canopies in sacred peace pacts</span>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Secured</span>
+</div>
+</div>
+<!-- Trees Planted Card -->
+<div class="rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl p-4 shadow-[0_8px_24px_rgba(214,185,120,0.12)] flex flex-col justify-between">
+<div>
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-3">
+<span class="material-symbols-outlined text-[18px]">park</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">98M</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug mt-1 block">Ancient saplings planted to heal</span>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Target: 100M</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK ACCESS & SACRED PORTALS -->
+<section class="px-margin mb-10 flex flex-col">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold block mb-0.5">Visions In Motion</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Explore Key Portals</h2>
+</div>
+<button class="font-label-md text-label-md text-primary flex items-center gap-1 hover:text-on-surface transition-colors">
+<span>View all</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Horizontal Scrolling Carousel / Cards -->
+<div class="flex gap-4 overflow-x-auto pb-3 pt-1 -mx-margin px-margin scrollbar-none snap-x snap-mandatory">
+<!-- Portal 1: Clean Oceans & Rivers -->
+<div class="snap-start shrink-0 w-64 rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl overflow-hidden shadow-[0_12px_28px_rgba(38,61,50,0.06)] flex flex-col">
+<div class="h-28 relative">
+<img class="w-full h-full object-cover" data-alt="An ethereal aerial view of azure tranquil river delta flowing into a serene ocean at sunrise, sparkling golden dust reflections over gentle emerald and cyan ripples, pristine heavenly clarity, fine-art photographic composition with golden morning glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnqbsDb7a4Gr1d_Ezo7fTC6XnZ-OhrVF65yLUirGBo8peJLGJgSeRmMFlFqP-F6dEBc5zhENEimLBVDeREAVx7RhgW-x5Byu-uBYqS1leTPUZDXXfiE0BRawEhVJCopeDiJBZs1pHlxQRDd4e4AVtccLlK_b8zhoO0EQLf8fDR7pX8Scy4H7O-jtq9sgKtSI0b2oDPJ55eaysFyC2lwauZvlh5qzUsXRAkCU2gYT9k"/>
+<span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Waters</span>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Oceanic Sanctuaries</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Clearing ghost nets and revitalizing luminous coral sanctuaries.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-medium">14 Active Missions</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Portal 2: Renewable Sun Harmonics -->
+<div class="snap-start shrink-0 w-64 rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl overflow-hidden shadow-[0_12px_28px_rgba(38,61,50,0.06)] flex flex-col">
+<div class="h-28 relative">
+<img class="w-full h-full object-cover" data-alt="Ethereal glass solar flower sculptures standing quietly in a golden meadow at sunrise, gentle morning mist wrapping around clean architectural solar structures, high-end poetic eco-futurism, soft pastel colors of gold cream and ivory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbVDOR22VKgi1BdIS1COxcsE7zqc0_jaE3Pq7QNy2wD05M7Rfzs2QYkgCD2srfF1k-F2SfDKEzDL9jADA5i9krItzYWrGvhJporxmK4RWooRr2-Y_7IxRCc8Wd1wMf588E9yxaoR22ma4zNjd1uWTs8YP-LXSdm7dsAty1KeDpsJhhhXTdHF819iAt1UPVlyerqAJkYK9Q8vUCdcDqkK_Qh5FCVKzieykTSkB0KJlr"/>
+<span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Energy</span>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Dawn Energy Grid</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Bringing radiant decentralized clean light to secluded rural valleys.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-medium">89 Villages Lit</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Portal 3: Community Wisdom Hub -->
+<div class="snap-start shrink-0 w-64 rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl overflow-hidden shadow-[0_12px_28px_rgba(38,61,50,0.06)] flex flex-col">
+<div class="h-28 relative">
+<img class="w-full h-full object-cover" data-alt="A community greenhouse conservatory bathed in soft translucent morning rays, elders and children joyfully tending sacred indigenous seed collections together, serene warm golden atmosphere, tranquil botanical architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeqZTYoUWyRQxrTuwYepGMIM3gk9oen0JW0yDWOMavpqO7-pyymS7ozHl5L1enOdnWw1DA7zp_nDtQuIJkpC92y2m95yLAWbXf6TJIvb4bTHLMecxDwga96fmO6suj1SiunOWlV_AtLa-UCYbXjprvrpU_PTnwx4RBNwEn3gMHOajX6bByb3tW8SjqdcKKpqAmOkIo_Ad9CW7yuWaIVHETjJkf8zVKIQKDjsy7EIMt"/>
+<span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Kinship</span>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Indigenous Seed Ark</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Preserving ancient botanical biodiversity for generations yet unborn.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-medium">2,400 Strains Kept</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE IMPACT CALCULATOR PREVIEW -->
+<section class="px-margin mb-10">
+<div class="rounded-xl bg-gradient-to-br from-surface-container-lowest/95 via-surface-container-low/80 to-secondary-container/40 backdrop-blur-2xl p-6 shadow-[0_16px_36px_rgba(38,61,50,0.08),0_0_20px_rgba(214,185,120,0.2)] flex flex-col relative overflow-hidden">
+<!-- Decorative radial shine -->
+<div class="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-primary-container/20 blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_fix_high</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Interactive Revelation</span>
+</div>
+<h3 class="font-headline-sm text-title-lg text-on-surface mb-2">Your Micro-Action Radiance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+        Discover how tiny daily intentional shifts bloom into global restoration ripples.
+      </p>
+<!-- Interactive Micro-Slider -->
+<div class="rounded-lg bg-surface-container-lowest/70 p-4 shadow-sm mb-5">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md text-on-surface">Single-Use Replacements / Day</span>
+<span class="font-title-md text-title-md text-primary font-bold" id="slider-val">3 items</span>
+</div>
+<input class="w-full accent-primary h-2 bg-surface-container rounded-lg cursor-pointer" id="impact-slider" max="10" min="1" type="range" value="3"/>
+<div class="grid grid-cols-2 gap-3 mt-4 pt-3 border-t border-surface-variant/30">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">CO₂ Lift / Year</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold" id="co2-metric">48.6 kg</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Clean Waters Saved</span>
+<span class="font-title-md text-title-md text-tertiary font-semibold" id="water-metric">1,095 L</span>
+</div>
+</div>
+</div>
+<button class="w-full h-12 rounded-full bg-surface-container-highest/60 hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-lg text-label-lg transition-all duration-300 flex items-center justify-center gap-2">
+<span>Open Sacred Calculator</span>
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+</button>
+</div>
+</section>
+<!-- COMMUNITY WHISPER QUOTE -->
+<section class="px-margin mb-6 flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 shadow-sm flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-[24px]">format_quote</span>
+</div>
+<blockquote class="font-headline-sm text-title-md italic text-on-surface leading-snug max-w-xs mb-3">
+      "We do not inherit the earth from our ancestors; we borrow it with gentle reverence from our children."
+    </blockquote>
+<figcaption class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">
+      Ancient Proverb • Dawn Fellowship
+    </figcaption>
+<!-- Subtle Golden Ray End Divider -->
+<div class="w-32 h-[1px] bg-gradient-to-r from-transparent via-primary-container to-transparent mt-6 mb-2"></div>
+</section>
+</div>
+<script>
+  // Soul Counter Gentle Ticker Micro-interaction
+  const soulCounter = document.getElementById('soul-counter');
+  if (soulCounter) {
+    let currentVal = 142890;
+    setInterval(() => {
+      if (Math.random() > 0.4) {
+        currentVal += Math.floor(Math.random() * 3) + 1;
+        soulCounter.textContent = currentVal.toLocaleString('en-US');
+      }
+    }, 4200);
+  }
+
+  // Interactive Impact Calculator Slider Logic
+  const slider = document.getElementById('impact-slider');
+  const sliderVal = document.getElementById('slider-val');
+  const co2Metric = document.getElementById('co2-metric');
+  const waterMetric = document.getElementById('water-metric');
+
+  if (slider && sliderVal && co2Metric && waterMetric) {
+    slider.addEventListener('input', (e) => {
+      const val = parseInt(e.target.value, 10);
+      sliderVal.textContent = `${val} ${val === 1 ? 'item' : 'items'}`;
+      const co2 = (val * 16.2).toFixed(1);
+      const water = (val * 365).toLocaleString('en-US');
+      co2Metric.textContent = `${co2} kg`;
+      waterMetric.textContent = `${water} L`;
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe pointer-events-none" data-active-classes="bg-gradient-to-tr from-primary-container to-primary-fixed text-on-primary-fixed shadow-[0_4px_16px_rgba(214,185,120,0.45)]"><div class="px-space-md pb-space-sm pt-1"><div class="pointer-events-auto mx-auto max-w-md h-16 rounded-full bg-[#FAF8F0]/85 backdrop-blur-2xl shadow-[0_16px_40px_-6px_rgba(38,61,50,0.08),0_0_24px_rgba(214,185,120,0.22)] ring-1 ring-primary-container/30 px-2 flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-full px-space-sm transition-all duration-300 bg-gradient-to-tr from-primary-container to-primary-fixed text-on-primary-fixed shadow-[0_4px_16px_rgba(214,185,120,0.45)]" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">sunny</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[10px] mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-full px-space-sm text-secondary hover:text-on-surface transition-all duration-300" data-path="issues" href="#"><span class="material-symbols-outlined text-[20px]">nature</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[10px] mt-0.5">Issues</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-full px-space-sm text-secondary hover:text-on-surface transition-all duration-300" data-path="impact" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[10px] mt-0.5">Impact</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-full px-space-sm text-secondary hover:text-on-surface transition-all duration-300" data-path="pledge" href="#"><span class="material-symbols-outlined text-[20px]">volunteer_activism</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[10px] mt-0.5">Pledge</span></a></div></div></nav></body></html>

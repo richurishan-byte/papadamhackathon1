@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#725b24", "tertiary": "#52634f", "surface-variant": "#cee9d9", "on-secondary-container": "#59666f", "inverse-on-surface": "#dcf7e7", "on-primary-fixed": "#251a00", "outline": "#7e7668", "error": "#ba1a1a", "surface-container-highest": "#cee9d9", "on-tertiary-fixed-variant": "#3a4b38", "surface-container-low": "#dffaea", "tertiary-fixed": "#d4e8ce", "surface-container": "#d9f4e4", "secondary-container": "#d6e4ee", "primary": "#725b24", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface": "#082016", "on-secondary-fixed-variant": "#3b4951", "on-surface-variant": "#4c463a", "surface-bright": "#e8fff0", "surface-dim": "#c6e0d1", "outline-variant": "#cfc5b5", "on-error-container": "#93000a", "on-secondary-fixed": "#101d24", "on-primary-container": "#5d4913", "on-primary": "#ffffff", "primary-container": "#d6b978", "secondary": "#536069", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "background": "#e8fff0", "tertiary-container": "#afc2aa", "secondary-fixed-dim": "#bbc8d2", "primary-fixed-dim": "#e1c381", "inverse-primary": "#e1c381", "primary-fixed": "#fedf9b", "surface": "#e8fff0", "secondary-fixed": "#d6e4ee", "on-background": "#082016", "on-tertiary-container": "#3f503d", "on-tertiary-fixed": "#101f0f", "tertiary-fixed-dim": "#b9ccb3", "on-primary-fixed-variant": "#58440e", "inverse-surface": "#1e352a", "surface-container-high": "#d4efdf", "error-container": "#ffdad6" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "gutter-tablet": "2rem", "space-lg": "2rem", "space-xl": "3.5rem", "space-md": "1.25rem", "margin": "1.25rem", "gutter-desktop": "2.5rem", "margin-desktop": "4rem", "margin-tablet": "2.5rem", "gutter": "1.5rem", "space-xs": "0.375rem" }, fontFamily: { "body-md": ["Manrope"], "label-sm": ["Manrope"], "display-hero-mobile": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "title-lg": ["Manrope"], "body-sm": ["Manrope"], "display-hero": ["Playfair Display"], "label-lg": ["Manrope"], "body-lg": ["Manrope"], "label-md": ["Manrope"], "headline-sm": ["Playfair Display"], "headline-lg": ["Playfair Display"], "title-md": ["Manrope"], "headline-md": ["Playfair Display"] }, fontSize: { "body-md": ["1rem", { lineHeight: "1.65rem", letterSpacing: "0.01em", fontWeight: "400" }], "label-sm": ["0.6875rem", { lineHeight: "0.875rem", letterSpacing: "0.14em", fontWeight: "500" }], "display-hero-mobile": ["2.75rem", { lineHeight: "3.25rem", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-lg-mobile": ["2rem", { lineHeight: "2.5rem", letterSpacing: "0em", fontWeight: "500" }], "title-lg": ["1.375rem", { lineHeight: "1.875rem", letterSpacing: "-0.01em", fontWeight: "600" }], "body-sm": ["0.875rem", { lineHeight: "1.35rem", letterSpacing: "0.015em", fontWeight: "400" }], "display-hero": ["4.5rem", { lineHeight: "5rem", letterSpacing: "-0.02em", fontWeight: "400" }], "label-lg": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.08em", fontWeight: "600" }], "body-lg": ["1.125rem", { lineHeight: "1.85rem", letterSpacing: "0.01em", fontWeight: "400" }], "label-md": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.12em", fontWeight: "600" }], "headline-sm": ["1.75rem", { lineHeight: "2.25rem", letterSpacing: "0em", fontWeight: "600" }], "headline-lg": ["3rem", { lineHeight: "3.5rem", letterSpacing: "-0.015em", fontWeight: "500" }], "title-md": ["1.125rem", { lineHeight: "1.625rem", letterSpacing: "0em", fontWeight: "600" }], "headline-md": ["2.25rem", { lineHeight: "2.75rem", letterSpacing: "-0.01em", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#FAF8F0;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-[#FAF8F0] font-body-md text-on-surface antialiased flex flex-col min-h-screen relative selection:bg-primary-container selection:text-on-primary-container"><div class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-10%,rgba(214,185,120,0.18),transparent_70%),radial-gradient(ellipse_60%_40%_at_100%_100%,rgba(220,234,244,0.35),transparent_60%)]"></div><header class="fixed top-0 inset-x-0 z-50 pt-safe bg-[#FAF8F0]/75 backdrop-blur-2xl shadow-[0_8px_32px_-4px_rgba(214,185,120,0.12)]"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="A Better Tomorrow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsNgQin36yMagqiBWn3J0GMVJ4by6VbOPsvbcBBEzx1Nm0vUIO4pMr43Gqs8rh4n6gmz5LIJxMVNtcC6By6j-SQP39Ye2q32MEoiXfuOzz8fSvwGlqU6Wt63AIk70VQlj1mak83u5jjMFGSvQ8KJxIheVXbNUM7CECKky_j6k3D0wv3Vab2RME7Vz_pShNMKEBoRGvAYEjLXGVxXtpFBZnKAZ65pQmR-yJ6m6GRX8u"/><div class="flex flex-col"><span class="font-headline-sm text-title-md text-on-surface tracking-tight leading-none">A Better Tomorrow</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase mt-0.5">Pledge</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 rounded-full flex items-center justify-center text-primary hover:text-on-surface hover:bg-surface-container-highest/40 transition-colors"><span class="material-symbols-outlined text-[22px]">wb_twilight</span></button><div class="p-0.5 rounded-full ring-1 ring-primary-container/60 shadow-[0_0_12px_rgba(214,185,120,0.35)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTWT8qevWRsmjY05pH9l_sVR-EsL-7CutEH7CoTBNwuu85D2K_XQoQ0a2ATJ4WgVd3LibpOYldM_K6nuG-gf20p3hGSOj6g5eJp5xrIiWgJHgACwwJO8BAg0EdhBk4OGbBBYRlSD2IB9aXZhDPCcOBVh7chjuCURRXo1s3Ar4FgZ2cQwZiFJ5Wcv_KFLBG3TSBzV8IS5vjpmy2dMYNOXNvh9bJ3fGoCO98CZ6LCGF0"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-transparent z-10"><div class="flex flex-col w-full px-space-md space-y-space-lg">
+<!-- HERO EDITORIAL INTRO -->
+<section class="flex flex-col items-center text-center pt-space-sm space-y-space-xs relative">
+<!-- Atmospheric Ambient Glow -->
+<div class="pointer-events-none absolute -top-8 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl -z-10"></div>
+<!-- Golden Dawn Chip -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/60 shadow-[0_4px_16px_rgba(214,185,120,0.2)]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed tracking-widest uppercase">The Sacred Pledge</span>
+</div>
+<!-- Hero Title -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-1">
+      Make Your Promise to the Future
+    </h1>
+<!-- Editorial Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs leading-relaxed">
+      A vow of hope, kindness, and conscious living etched into the collective dawn.
+    </p>
+</section>
+<!-- SACRED PLEDGE CREATION FORM -->
+<section class="relative bg-surface-container-lowest/80 backdrop-blur-xl rounded-lg p-space-md shadow-[0_16px_40px_-6px_rgba(38,61,50,0.06),0_0_24px_rgba(214,185,120,0.2)] space-y-space-md">
+<!-- Decorative subtle light sweep -->
+<div class="pointer-events-none absolute inset-0 rounded-lg bg-gradient-to-br from-white/70 via-transparent to-primary-container/10"></div>
+<div class="relative flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-1.5" for="pledge-text">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_note</span>
+          Inscribe Your Dedication
+        </label>
+<span class="font-label-sm text-label-sm text-secondary" id="char-counter">0 / 280</span>
+</div>
+<!-- Textarea Container -->
+<div class="relative bg-surface-container-low/70 rounded-2xl p-space-sm focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_#D6B978,0_0_18px_rgba(214,185,120,0.3)] transition-all duration-300">
+<textarea class="w-full bg-transparent border-0 outline-none resize-none font-body-md text-body-md text-on-surface placeholder:text-secondary/60 leading-relaxed" id="pledge-text" maxlength="280" placeholder="What promise do you dedicate to tomorrow's generations? (e.g. 'I pledge to plant 10 trees every season and live with gentle reverence for water.')" rows="3"></textarea>
+</div>
+</div>
+<!-- Category Selector -->
+<div class="relative flex flex-col space-y-space-xs">
+<span class="font-label-md text-label-md text-on-surface tracking-wider uppercase">Pledge Sanctuary</span>
+<div class="flex flex-wrap gap-2" id="category-group">
+<button class="category-pill active flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm bg-gradient-to-tr from-primary-container to-primary-fixed text-on-primary-fixed shadow-[0_4px_12px_rgba(214,185,120,0.35)] transition-all duration-200" data-category="Earth Healing" type="button">
+<span class="material-symbols-outlined text-[16px]">park</span>
+          Earth Healing
+        </button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" data-category="Human Kindness" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+          Human Kindness
+        </button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" data-category="Clean Ocean" type="button">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+          Clean Ocean
+        </button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" data-category="Conscious Living" type="button">
+<span class="material-symbols-outlined text-[16px]">energy_savings_leaf</span>
+          Conscious Living
+        </button>
+</div>
+</div>
+<!-- Commitment Tier Buttons -->
+<div class="relative flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface tracking-wider uppercase">Commitment Pillar</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">stars</span> Continuous Light
+        </span>
+</div>
+<div class="grid grid-cols-2 gap-2" id="tier-group">
+<button class="tier-card active text-left p-3 rounded-2xl bg-gradient-to-tr from-primary-fixed to-primary-container text-on-primary-fixed shadow-md transition-all duration-200" data-tier="Supporter" type="button">
+<div class="font-title-md text-title-md leading-tight">Supporter</div>
+<div class="font-label-sm text-label-sm opacity-90">$10 / month</div>
+</button>
+<button class="tier-card text-left p-3 rounded-2xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all duration-200" data-tier="Guardian" type="button">
+<div class="font-title-md text-title-md leading-tight">Guardian</div>
+<div class="font-label-sm text-label-sm text-secondary">$25 / month</div>
+</button>
+<button class="tier-card text-left p-3 rounded-2xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all duration-200" data-tier="Beacon of Light" type="button">
+<div class="font-title-md text-title-md leading-tight">Beacon</div>
+<div class="font-label-sm text-label-sm text-secondary">$50 / month</div>
+</button>
+<button class="tier-card text-left p-3 rounded-2xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all duration-200" data-tier="Custom Promise" type="button">
+<div class="font-title-md text-title-md leading-tight">Vow of Action</div>
+<div class="font-label-sm text-label-sm text-secondary">Free Promise</div>
+</button>
+</div>
+</div>
+<!-- Celestial Action Button -->
+<div class="relative pt-1">
+<button class="w-full h-14 rounded-full bg-gradient-to-r from-primary-container via-primary-fixed to-primary-container text-on-primary-fixed font-title-md text-title-md shadow-[0_8px_24px_rgba(214,185,120,0.4)] hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 transition-all duration-300 overflow-hidden relative" id="btn-inscribe" type="button">
+<!-- Golden Shimmer Glint -->
+<span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full hover:translate-x-full duration-1000 transition-transform"></span>
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>Inscribe My Pledge &amp; Light a Candle</span>
+</button>
+</div>
+<!-- Micro Confirmation Banner (Hidden by default) -->
+<div class="hidden rounded-2xl bg-surface-variant p-space-sm flex items-center gap-3 text-on-surface animate-fade-in" id="pledge-confirmation">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-title-md text-title-md leading-tight">Your flame has been received</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Added to the golden tapestry of tomorrow.</p>
+</div>
+</div>
+</section>
+<!-- LIVE GLOBAL COUNTER BANNER -->
+<section class="relative bg-gradient-to-r from-secondary-container via-surface-container-high to-secondary-container rounded-lg p-space-md shadow-sm overflow-hidden text-center">
+<div class="flex flex-col items-center justify-center space-y-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">flare</span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase">Sacred Collective Resonance</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-medium" id="global-counter">
+        847,219
+      </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Pledges Inscribed Across <strong class="text-on-surface font-title-md">164 Nations</strong>
+</p>
+</div>
+</section>
+<!-- COMMUNITY IMPACT WALL ("WALL OF HOPE") -->
+<section class="flex flex-col space-y-space-md">
+<!-- Section Title Group -->
+<div class="flex flex-col space-y-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_#D6B978]"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Wall of Hope</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Live Tapestry</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Voices of hope across the world, bound by a shared vow.
+      </p>
+</div>
+<!-- Cards Stack -->
+<div class="flex flex-col space-y-space-md" id="hope-wall-container">
+<!-- Card 1: Elena Rostova (Kyoto) -->
+<article class="bg-surface-container-lowest/80 backdrop-blur-xl rounded-lg p-space-md shadow-[0_8px_28px_-6px_rgba(38,61,50,0.05),0_0_16px_rgba(214,185,120,0.15)] flex flex-col space-y-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Intimate portrait of Elena from Kyoto in soft natural morning light surrounded by lush bamboo leaves and radiant mist in warm pastel tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB04yD7WHHqZTObPac5ZU_uTZPHcRYqaSEEq34LXeQ4m8s1fughxGcjx2j6X6RzQcs6M39UPoDl_lP_3xeFOoSpV3kBnkc51qkFYe-88JLK1N4SYSrwGT8n65_B-1q_ikWYkxyl0-_gB6ZRe18ifnhIflKScvcrpTPoNNuVwsoYRCJ1rgekvDP_PdW0j1aM9ASYSApur38lKMuxTXYiin4-OwEMwwNpMJdWO03h6-oi"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Elena Rostova</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">location_on</span> Kyoto, Japan
+              </span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-tertiary-container text-label-sm font-label-sm">
+            Earth Healing
+          </span>
+</div>
+<blockquote class="font-headline-sm text-title-lg italic text-on-surface font-normal leading-relaxed">
+          “May our grandchildren swim in rivers clear enough to drink the stars.”
+        </blockquote>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium blessing-count">240 glowing lights</span>
+</div>
+<button class="bless-btn h-10 px-4 rounded-full bg-surface-container-low text-primary hover:bg-gradient-to-tr hover:from-primary-container hover:to-primary-fixed hover:text-on-primary-fixed transition-all duration-300 font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95" data-active="false" type="button">
+<span class="material-symbols-outlined text-[18px]">wb_sunny</span>
+<span>Send Light</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Marcus Vance (Nairobi) -->
+<article class="bg-surface-container-lowest/80 backdrop-blur-xl rounded-lg p-space-md shadow-[0_8px_28px_-6px_rgba(38,61,50,0.05),0_0_16px_rgba(214,185,120,0.15)] flex flex-col space-y-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Editorial portrait of Marcus from Nairobi bathed in warm sunrise gold over an open savanna, glowing dawn ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnUfUgwqpReXBOFL6xRXMa7TvyWAC2tBcg076fycekYSBOs0iRT1ym-ezi1Z_heYAs1b9iVregNoW216OtOuopLyBlPuwo7iv87YZsX8PYg0JWc-0yL4UbijrCoWlCWL8VBPpwly7HYJ1_ngWCVKHcT7UKBzPpvS2Id-ujRvtxR19yvFcZO84BKZYrLOL5qcsZfBCRr0RviDr_H9GwUeA3djsw7UVj8qn5yD8bnWc8"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Marcus Vance</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">location_on</span> Nairobi, Kenya
+              </span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-tertiary-container text-label-sm font-label-sm">
+            Clean Ocean &amp; Water
+          </span>
+</div>
+<blockquote class="font-headline-sm text-title-lg italic text-on-surface font-normal leading-relaxed">
+          “Pledged to build 3 solar water wells in Turkana. Hope is a muscle we exercise together.”
+        </blockquote>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium blessing-count">512 glowing lights</span>
+</div>
+<button class="bless-btn h-10 px-4 rounded-full bg-surface-container-low text-primary hover:bg-gradient-to-tr hover:from-primary-container hover:to-primary-fixed hover:text-on-primary-fixed transition-all duration-300 font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95" data-active="false" type="button">
+<span class="material-symbols-outlined text-[18px]">wb_sunny</span>
+<span>Send Light</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Ananya Sharma (Kerala) -->
+<article class="bg-surface-container-lowest/80 backdrop-blur-xl rounded-lg p-space-md shadow-[0_8px_28px_-6px_rgba(38,61,50,0.05),0_0_16px_rgba(214,185,120,0.15)] flex flex-col space-y-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Portrait of Ananya from Kerala surrounded by fertile permaculture greenery with golden hour light catching water droplets on leaves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2kGzD0UgPbb_-pM_nTS0NLpc30YZgcQBnMtRmDTETt6vMa9el3G3DMNc2UHiRgmssOLk5cKil1ID32vEbB1OxNqR9AiYzvFY8lMCGouDMmlF6vFAZrYFdnaTgnaCTn9sXmsmjwyyt7dIVxa_s90l04jeDpjlePBVvTTp4Y5nmf0yznLdHwQ9Yehpi2xT2NQI9Valtep7cmEg6LQeL1FMsiu6IqM0ezaw5OL699G2c"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Ananya Sharma</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">location_on</span> Kerala, India
+              </span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-tertiary-container text-label-sm font-label-sm">
+            Conscious Living
+          </span>
+</div>
+<blockquote class="font-headline-sm text-title-lg italic text-on-surface font-normal leading-relaxed">
+          “Switched our entire farm to regenerative permaculture. Nature heals when we step back.”
+        </blockquote>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium blessing-count">893 glowing lights</span>
+</div>
+<button class="bless-btn h-10 px-4 rounded-full bg-surface-container-low text-primary hover:bg-gradient-to-tr hover:from-primary-container hover:to-primary-fixed hover:text-on-primary-fixed transition-all duration-300 font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95" data-active="false" type="button">
+<span class="material-symbols-outlined text-[18px]">wb_sunny</span>
+<span>Send Light</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- CLOSING SANCTUARY BLESSING NOTE -->
+<footer class="pt-space-sm pb-space-lg flex flex-col items-center text-center space-y-2">
+<div class="w-12 h-1 rounded-full bg-primary-container/40"></div>
+<p class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">
+      Every vow casts ripples into infinity
+    </p>
+</footer>
+</div>
+<script>
+  (function () {
+    // Character Counter
+    const textarea = document.getElementById('pledge-text');
+    const counter = document.getElementById('char-counter');
+    if (textarea && counter) {
+      textarea.addEventListener('input', () => {
+        counter.textContent = `${textarea.value.length} / 280`;
+      });
+    }
+
+    // Category Selector Toggles
+    const categoryButtons = document.querySelectorAll('#category-group .category-pill');
+    categoryButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryButtons.forEach(b => {
+          b.className = 'category-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all duration-200';
+        });
+        btn.className = 'category-pill active flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm bg-gradient-to-tr from-primary-container to-primary-fixed text-on-primary-fixed shadow-[0_4px_12px_rgba(214,185,120,0.35)] transition-all duration-200';
+      });
+    });
+
+    // Tier Selector Toggles
+    const tierButtons = document.querySelectorAll('#tier-group .tier-card');
+    tierButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tierButtons.forEach(b => {
+          b.className = 'tier-card text-left p-3 rounded-2xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all duration-200';
+          const sub = b.querySelector('.text-label-sm');
+          if (sub) sub.className = 'font-label-sm text-label-sm text-secondary';
+        });
+        btn.className = 'tier-card active text-left p-3 rounded-2xl bg-gradient-to-tr from-primary-fixed to-primary-container text-on-primary-fixed shadow-md transition-all duration-200';
+        const activeSub = btn.querySelector('.text-label-sm');
+        if (activeSub) activeSub.className = 'font-label-sm text-label-sm opacity-90';
+      });
+    });
+
+    // Inscribe Action Interaction
+    const inscribeBtn = document.getElementById('btn-inscribe');
+    const confirmation = document.getElementById('pledge-confirmation');
+    const liveCounter = document.getElementById('global-counter');
+    let countNum = 847219;
+
+    if (inscribeBtn) {
+      inscribeBtn.addEventListener('click', () => {
+        const textVal = textarea ? textarea.value.trim() : '';
+        countNum += 1;
+        if (liveCounter) {
+          liveCounter.textContent = countNum.toLocaleString();
+        }
+
+        if (confirmation) {
+          confirmation.classList.remove('hidden');
+          confirmation.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Prepend new card to the wall if text entered
+        if (textVal) {
+          const wall = document.getElementById('hope-wall-container');
+          if (wall) {
+            const newCard = document.createElement('article');
+            newCard.className = 'bg-surface-container-lowest/90 backdrop-blur-xl rounded-lg p-space-md shadow-[0_8px_28px_-6px_rgba(38,61,50,0.08),0_0_20px_rgba(214,185,120,0.35)] flex flex-col space-y-space-sm relative transition-all duration-500';
+            newCard.innerHTML = `
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-full bg-primary-container flex items-center justify-center text-on-primary-fixed font-title-md">
+                    You
+                  </div>
+                  <div class="flex flex-col min-w-0">
+                    <span class="font-title-md text-title-md text-on-surface leading-tight">Your Light</span>
+                    <span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[13px]">wb_twilight</span> Just Now
+                    </span>
+                  </div>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm">
+                  Sacred Vow
+                </span>
+              </div>
+              <blockquote class="font-headline-sm text-title-lg italic text-on-surface font-normal leading-relaxed">
+                &ldquo;${textVal.replace(/</g, "&lt;").replace(/>/g, "&gt;")}&rdquo;
+              </blockquote>
+              <div class="flex items-center justify-between pt-2">
+                <div class="flex items-center gap-2">
+                  <div class="w-8 h-8 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                  </div>
+                  <span class="font-label-md text-label-md text-on-surface-variant font-medium">1 glowing light</span>
+                </div>
+                <span class="text-label-sm font-label-sm text-primary uppercase tracking-wider">Eternal Vow</span>
+              </div>
+            `;
+            wall.prepend(newCard);
+            if (textarea) textarea.value = '';
+            if (counter) counter.textContent = '0 / 280';
+          }
+        }
+      });
+    }
+
+    // Blessing 'Send Light' interaction
+    const blessButtons = document.querySelectorAll('.bless-btn');
+    blessButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isBlessed = btn.getAttribute('data-active') === 'true';
+        const card = btn.closest('article');
+        const countLabel = card ? card.querySelector('.blessing-count') : null;
+
+        if (!isBlessed) {
+          btn.setAttribute('data-active', 'true');
+          btn.className = 'bless-btn h-10 px-4 rounded-full bg-gradient-to-tr from-primary-container to-primary-fixed text-on-primary-fixed font-label-md text-label-md flex items-center gap-1.5 shadow-[0_4px_16px_rgba(214,185,120,0.4)] transition-all duration-300';
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span><span>Light Sent</span>`;
+          if (countLabel) {
+            let current = parseInt(countLabel.textContent) || 0;
+            countLabel.textContent = `${current + 1} glowing lights`;
+          }
+        } else {
+          btn.setAttribute('data-active', 'false');
+          btn.className = 'bless-btn h-10 px-4 rounded-full bg-surface-container-low text-primary hover:bg-gradient-to-tr hover:from-primary-container hover:to-primary-fixed hover:text-on-primary-fixed transition-all duration-300 font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95';
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">wb_sunny</span><span>Send Light</span>`;
+          if (countLabel) {
+            let current = parseInt(countLabel.textContent) || 1;
+            countLabel.textContent = `${current - 1} glowing lights`;
+          }
+        }
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe pointer-events-none" data-active-classes="bg-gradient-to-tr from-primary-container to-primary-fixed text-on-primary-fixed shadow-[0_4px_16px_rgba(214,185,120,0.45)]"><div class="px-space-md pb-space-sm pt-1"><div class="pointer-events-auto mx-auto max-w-md h-16 rounded-full bg-[#FAF8F0]/85 backdrop-blur-2xl shadow-[0_16px_40px_-6px_rgba(38,61,50,0.08),0_0_24px_rgba(214,185,120,0.22)] ring-1 ring-primary-container/30 px-2 flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-full px-space-sm text-secondary hover:text-on-surface transition-all duration-300" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">sunny</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[10px] mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-full px-space-sm text-secondary hover:text-on-surface transition-all duration-300" data-path="issues" href="#"><span class="material-symbols-outlined text-[20px]">nature</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[10px] mt-0.5">Issues</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-full px-space-sm text-secondary hover:text-on-surface transition-all duration-300" data-path="impact" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[10px] mt-0.5">Impact</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-full px-space-sm transition-all duration-300 bg-gradient-to-tr from-primary-container to-primary-fixed text-on-primary-fixed shadow-[0_4px_16px_rgba(214,185,120,0.45)]" data-path="pledge" href="#"><span class="material-symbols-outlined text-[20px]">volunteer_activism</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[10px] mt-0.5">Pledge</span></a></div></div></nav></body></html>

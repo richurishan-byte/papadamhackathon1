@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Elena Rostova",
+    "location": "Kyoto, Japan",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuB04yD7WHHqZTObPac5ZU_uTZPHcRYqaSEEq34LXeQ4m8s1fughxGcjx2j6X6RzQcs6M39UPoDl_lP_3xeFOoSpV3kBnkc51qkFYe-88JLK1N4SYSrwGT8n65_B-1q_ikWYkxyl0-_gB6ZRe18ifnhIflKScvcrTPoNNuVwsoYRCJ1rgekvDP_PdW0j1aM9ASYSApur38lKMuxTXYiin4-OwEMwwNpMJdWO03h6-oi",
+    "category": "Earth Healing",
+    "text": "May our grandchildren swim in rivers clear enough to drink the stars.",
+    "lights": 240,
+    "time": "2 hours ago",
+    "tier": "Guardian"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Vance",
+    "location": "Nairobi, Kenya",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDnUfUgwqpReXBOFL6xRXMa7TvyWAC2tBcg076fycekYSBOs0iRT1ym-ezi1Z_heYAs1b9iVregNoW216OtOuopLyBlPuwo7iv87YZsX8PYg0JWc-0yL4UbijrCoWlCWL8VBPpwly7HYJ1_ngWCVKHcT7UKBzPpvS2Id-ujRvtxR19yvFcZO84BKZYrLOL5qcsZfBCRr0RviDr_H9GwUeA3djsw7UVj8qn5yD8bnWc8",
+    "category": "Clean Ocean",
+    "text": "Pledged to build 3 solar water wells in Turkana. Hope is a muscle we exercise together.",
+    "lights": 512,
+    "time": "5 hours ago",
+    "tier": "Beacon"
+  },
+  {
+    "id": 3,
+    "name": "Ananya Sharma",
+    "location": "Kerala, India",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuC2kGzD0UgPbb_-pM_nTS0NLpc30YZgcQBnMtRmDTETt6vMa9el3G3DMNc2UHiRgmssOLk5cKil1ID32vEbB1OxNqR9AiYzvFY8lMCGouDMmlF6vFAZrYFdnaTgnaCTn9sXmsmjwyyt7dIVxa_s90l04jeDpjlePBVvTTp4Y5nmf0yznLdHwQ9Yehpi2xT2NQI9Valtep7cmEg6LQeL1FMsiu6IqM0ezaw5OL699G2c",
+    "category": "Conscious Living",
+    "text": "Switched our entire farm to regenerative permaculture. Nature heals when we step back.",
+    "lights": 893,
+    "time": "12 hours ago",
+    "tier": "Supporter"
+  },
+  {
+    "id": 4,
+    "name": "Julian & Clara Thorne",
+    "location": "Reykjavik, Iceland",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDTWT8qevWRsmjY05pH9l_sVR-EsL-7CutEH7CoTBNwuu85D2K_XQoQ0a2ATJ4WgVd3LibpOYldM_K6nuG-gf20p3hGSOj6g5eJp5xrIiWgJHgACwwJO8BAg0EdhBk4OGbBBYRlSD2IB9aXZhDPCcOBVh7chjuCURRXo1s3Ar4FgZ2cQwZiFJ5Wcv_KFLBG3TSBzV8IS5vjpmy2dMYNOXNvh9bJ3fGoCO98CZ6LCGF0",
+    "category": "Earth Healing",
+    "text": "Restoring geothermal wetlands to shield nesting puffins. Light begins with small quiet choices.",
+    "lights": 317,
+    "time": "1 day ago",
+    "tier": "Guardian"
+  }
+]
+
